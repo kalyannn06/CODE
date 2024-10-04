@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class TrainTime{
+    public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int trainLength = 400;
+    int speed = 50;
+    System.out.print("enter the length of bridge (in meters):");
+    int bridgeLength = sc.nextInt();
+    double time = ((double)(trainLength +  bridgeLength) / speed) * (18.0/5.0);
+    System.out.println("Time taken for the train to cross the bridge:" + time + " seconds");
+    sc.close();
+}
+}
